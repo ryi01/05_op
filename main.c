@@ -5,10 +5,21 @@
 
 int main(int argc, char *argv[]) {
 	
-	/*while practice*/
-	int i;
-	for(i=0; i<10; i++)
-	  printf("Hello World!\n");
+	/*practice 6*/
+	int num=0;
+	char c;
+	
+	printf("input a string :");
+	
+	while((c=getchar())!='\n')
+	{
+		if(c<='9'&& c>='0')
+		{
+			num++;
+		}
+	}
+	
+	printf("the number of digits is %d\n", num);
 	
 	return 0;
 }
